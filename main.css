@@ -1,19 +1,31 @@
 body {
-    background:url(subtlenet2.png);
+    /*background:url(subtlenet2.png);*/
     font: 1em 'PT Sans', Tahoma, Arial;
     text-transform:uppercase;
+	
+	    background-color: black;
+    background-image: url("photo_if_1500x500.jpg");
+    background-position: 120px 30px;
+    background-repeat: repeat; /*no-repeat;*/
+	    background-attachment: fixed;
+
 }
 
 /********** Main menu**********/
 .photoif { 
+background-attachment: fixed;
 	position:absolute;
 left: 250px;
+display: none;
 	}
+	
+	
 
 .nav {
+
     list-style:none;
     margin:30px;
-    opacity:.5;
+    opacity:0.95;  /*- прозрачність*/
     padding:0;
     width:50px;
     
@@ -38,7 +50,7 @@ left: 250px;
     transition:width .2s ease-in-out, height .2s ease-in-out .2s;
 }
 
-.nav li:hover {
+.nav li:hover { border-radius: 10px;
     height:175px;
     width:200px;
 }
