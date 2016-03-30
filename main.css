@@ -3,11 +3,7 @@ body {
     font: 1em 'PT Sans', Tahoma, Arial;
     text-transform:uppercase;
 	
-	    background-color: black;
-    background-image: url("photo_if_1500x500.jpg");
-    background-position: 120px 30px;
-    background-repeat: repeat; /*no-repeat;*/
-	    background-attachment: fixed;
+	    background: black url("photo_if_1500x500.jpg") 120px 30px repeat fixed;
 
 }
 
@@ -96,19 +92,23 @@ display: none;
 }
 
 .main-menu a:first-child::before {
-    background:url(home.png) center no-repeat;
+    background:url(menu.png) center no-repeat;
+	 background-position: 0;
 }
 
 .settings a:first-child::before {
-    background:url(settings.png) center no-repeat;
+    background:url(menu.png) center no-repeat;
+	 background-position: -30px;
 }
 
 .link a:first-child::before {
-    background:url(link.png) center no-repeat;
+    background:url(menu.png) center no-repeat;
+	 background-position: -63px;
 }
 
 .search a:first-child::before {
-    background:url(search.png) center no-repeat;
+    background:url(menu.png) center no-repeat;
+	 background-position: -97px;
 }
 
 .down {
